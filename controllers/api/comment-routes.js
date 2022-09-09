@@ -26,7 +26,7 @@ router.post("/", withAuth, (req, res) => {
     });
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", withAuth, (req, res) => {
   // expects => { comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.update(req.body, {
     individualHooks: true,
