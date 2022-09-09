@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "auth": "^0.0.9",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.2",
