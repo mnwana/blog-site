@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const bycrpt = require("bcrypt");
+const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
 // User model
@@ -35,8 +35,8 @@ User.init(
       allowNull: false,
       validate: {
         len: [4],
-        notContains: this.email,
-        notContains: this.username,
+        // notContains: this.email,
+        // notContains: this.username,
         // is: /^[a-z]+$/i // add regex for complex password
       },
     },
