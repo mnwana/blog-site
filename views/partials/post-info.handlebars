@@ -1,7 +1,7 @@
 <article>
   <div>
-    <a href="{{post_text}}" target="_blank">{{title}}</a>
-    <span>({{format_url post_text}})</span>
+    <a href="/post/{{id}}" target="_blank">{{title}}</a>
+    <span>({{format_post_text post_text}})</span>
   </div>
   <div>
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
