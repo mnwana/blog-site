@@ -7,7 +7,7 @@ module.exports = {
     ).getDate()}/${new Date(date).getFullYear()}`;
   },
   format_post_text: (post_text) => {
-    return post_text[0,40]+"..."
+    return post_text.substring(0,40)+"..."
   },
   format_plural: (word, amount) => {
     if (amount !== 1) {
